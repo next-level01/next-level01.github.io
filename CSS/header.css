@@ -1,0 +1,205 @@
+@import url(brand.css);
+
+
+header {
+    background-color: #E103CB;
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: auto;
+
+    & img {
+        width: 100px;
+        height: auto;
+    }
+}
+
+
+.menu nav {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+
+
+    & ul {
+        display: flex;
+        gap: 100px;
+
+        & li {
+            list-style: none;
+            color: white;
+
+            & a {
+                color: var(--colorblanco);
+                font-size: 1.25rem;
+                font-weight: 500;
+            }
+
+            & a :hover {
+                color: var(--colorblanco);
+            }
+        }
+    }
+}
+
+.abrir_menu {
+    display: none;
+}
+
+.logo2 {
+    display: none;
+}
+
+@media (max-width: 1023px) {
+
+    .header {
+        display: block;
+    }
+
+
+    .abrir_menu {
+        display: block;
+    }
+
+    .logo2 {
+        display: flex;
+        justify-content: space-between;
+        padding: 25px 0 25px 25px;
+
+        & img {
+            width: auto;
+            height: 40px;
+        }
+
+        & button img {
+            width: 30px;
+            height: auto;
+        }
+    }
+
+    .logo1 {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 25px;
+
+        & img {
+            width: auto;
+            height: 40px;
+        }
+
+        & button img {
+            width: 30px;
+            height: auto;
+        }
+    }
+
+    .menu {
+        visibility: hidden;
+        position: fixed;
+        background-color: var(--colorazul);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+    }
+
+
+
+    .menu nav {
+        flex-direction: column;
+
+        & ul {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .menu.visible {
+        visibility: visible;
+    }
+
+}
+
+
+@media (max-width: 767px) {
+
+    .header {
+        display: block;
+    }
+
+
+    .abrir_menu {
+        display: block;
+    }
+
+    .logo2 {
+        display: flex;
+        justify-content: space-between;
+        padding: 25px 0 25px 25px;
+
+        & img {
+            width: auto;
+            height: 40px;
+        }
+
+        & button img {
+            width: 30px;
+            height: auto;
+        }
+    }
+
+    .logo1 {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 25px;
+
+        & img {
+            width: auto;
+            height: 40px;
+        }
+
+        & button img {
+            width: 30px;
+            height: auto;
+        }
+    }
+
+    .menu {
+        visibility: hidden;
+        position: fixed;
+        background-color: var(--colorazul);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+    }
+
+
+
+    .menu nav {
+        flex-direction: column;
+
+        & ul {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .menu.visible {
+        visibility: visible;
+    }
+
+}

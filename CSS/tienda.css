@@ -1,0 +1,77 @@
+@import url(style.css);
+
+.foto_fifa {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.foto_portada {
+    & img {
+        width: 1370px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .videos iframe {
+        width: 80%;
+        height: auto;
+    }
+
+    .grid_5 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+    }
+
+    .servicio_foto img {
+        width: 80%;
+        height: auto;
+    }
+
+
+    .grid_3 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 40px;
+    }
+
+    .grid_2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 100px;
+    }
+
+    .foto_portada img {
+
+        width: 70%;
+        height: auto;
+    }
+
+    .foto_fifa img {
+        width: 70%;
+        height: auto;
+
+    }
+
+    .textos_portada h3 {
+        font-size: 1rem;
+    }
+
+    .input_buscador {
+        width: 70%;
+        height: auto;
+    }
+
+    .textos_portada1 h3 {
+        font-size: 1rem;
+    }
+
+    .banner {
+        width: 70%;
+        height: auto;
+        margin: 20px;
+    }
+}

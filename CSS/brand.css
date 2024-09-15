@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/*rooter la pagina*/
+:root {
+    --colorazul: #0A39E4;
+    --colornegro: #25252D;
+    --colorceleste: #48D6FF;
+    --colorgris: #858585;
+    --colorblanco: #F2F2F2;
+    --colormorado: #E103CB;
+
+    --fontnunito: "Nunito Sans", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    font-family: var(--fontnunito);
+    font-size: 16px;
+}
+
+/*rooter la pagina*/
+
+h1,
+h2,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+
+
+h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
+h5 {
+    font-size: 2rem;
+}
+
+h5 {
+    font-size: 1.5rem;
+}
+
+h6 {
+    font-size: 1.25rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Contenedor */
+.container {
+    max-width: 1140px;
+    margin: 0px auto;
+    padding: 80px 0;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    padding: 5px 25px;
+    border-radius: 50px;
+    background-color: transparent;
+    font-size: 1.25rem;
+    font-weight: 500;
+
+}
+
+.btn1 {
+    background-color: var(--colorceleste);
+    color: var(--colorazul);
+    border: 2px solid var(--colorceleste);
+}
+
+.btn1:hover {
+    background-color: transparent;
+    color: var(--colorblanco);
+    border: 2px solid var(--colorblanco);
+}
+
+.btn2 {
+    background-color: var(--colorceleste);
+    color: var(--colorazul);
+    border: 2px solid var(--colorceleste);
+}
+
+.btn2:hover {
+    background-color: transparent;
+    color: var(--colorblanco);
+    border: 2px solid var(--colorblanco);
+}
+
+.btn3 {
+    background-color: var(--colormorado);
+    color: var(--colorblanco);
+    border: 2px solid var(--colormorado);
+}
+
+.btn3:hover {
+    background-color: transparent;
+    color: var(--colormorado);
+    border: 2px solid var(--colornegro);
+}
+
+
+
+
+.container {
+    max-width: 1840px;
+    margin: 0px auto;
+    padding: 20px;
+}
+
+.grid_2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 28px;
+
+}
+
+.grid_3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 70px;
+}
+
+/* Grilla de 4 columnas */
+.grid_4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 80px;
+}
+
+/* Grilla de 5 columnas */
+.grid_5 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 80px;
+}
+
+.container1 {
+    background-color: var(--colormorado);
+    display: flex;
+    justify-content: center;
+    padding: 120px;
+    gap: 50px;
+    margin: 60px;
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    color: var(--colorblanco);
+    padding: 10px;
+
+    & a {
+        color: var(--colorblanco);
+    }
+
+    background-color: var(--colornegro);
+    grid-gap: 70px;
+}
+
+.foto_portada {
+    & img {
+        width: 1360px;
+        height: auto;
+    }
+}
+
+.foto_fifa {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+@media screen and (max-width: 767px) {
+
+
+    .grid_5 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+    }
+
+    .grid_3 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 40px;
+    }
+
+    .grid_2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 100px;
+    }
+
+
+}

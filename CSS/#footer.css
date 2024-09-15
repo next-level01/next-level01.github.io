@@ -1,0 +1,26 @@
+/* Aquí se define exclusivamente estilo aplicado al Footer */
+
+
+footer {
+    background-color: var(--colorceleste);
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    color: var(--colorblanco);
+    padding: 25px 0;
+
+    & .politicas {
+        display: flex;
+        gap: 50px;
+
+        & a {
+            color: var(--colorblanco);
+        }
+
+        & a:hover {
+            color: var(--colorceleste);
+        }
+    }
+}
