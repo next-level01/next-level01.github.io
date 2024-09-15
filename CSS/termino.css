@@ -1,0 +1,11 @@
+/* Importa los estilos de brnad, header y footer */
+
+@import url(style.css);
+
+.termino {
+    padding: 20px;
+
+    & h4 {
+        text-align: center;
+    }
+}

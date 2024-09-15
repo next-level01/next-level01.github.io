@@ -1,0 +1,42 @@
+@import url(style.css);
+
+
+.lista_datos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.lista_datos_1 {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.lista_imagenes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 75px;
+    background-color: var(--colorblanco);
+}
+
+.formulario_input {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.grupo_input input,
+textarea {
+    width: 100%;
+    padding: 10px;
+}
+
+.titulomapa {
+    text-align: center;
+    padding: 50px;
+}
